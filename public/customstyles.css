@@ -22,25 +22,28 @@ h1 span {
 
 
 
-/* Styling the jumbotron. */
-.jumbotron {
-    background: url(https://scontent.fybz1-1.fna.fbcdn.net/v/t31.0-8/16804339_1386616048026477_1170167787183639374_o.jpg?_nc_cat=0&oh=f96302496c76ceda71e5481cadb2b1f4&oe=5B6C13C8);
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 150px 50px 10px 50px;
+/* Styling the welcome image. */
+.container-title {
+    position: relative;
+    min-height: 200px;
+}
+.img-title {
+    min-height: 200px;
+}
+.text-block {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    right: 0%;
 }
 .jumbotron-heading {
     color: white;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.60);
 }
 
 
 
 /* Styling the spacing and backgrounds in the body. */
-img.border-white {
-    border: 10px solid white;
-}
 div.section {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -56,7 +59,7 @@ div.bg-blue {
 
 /* Styling the carousel. */
 .carousel-item {
-    min-height: 300px;          /* Avoids the page resizing when the screen is wide enough for content. */
+    min-height: 300px;          /* Avoids the page resizing when the screen is wide enough for the content. */
     padding-top: 20px;
 }
 
@@ -100,8 +103,16 @@ a.instagram-header {
 img.padded {
     padding: 5px;
 }
-button {
+#instagramMoreBtn {
     margin: 0 auto 20px auto;
+}
+
+
+
+/* Styling the contact form. */
+form {
+    width: 90%;
+    margin: auto;
 }
 
 
@@ -116,14 +127,8 @@ footer p {
 }
 footer a {
     color: white;
-    text-decoration: underline;
 }
-
-
-
-/* Other styling. */
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#footer-links a {
+    padding-left: 5px;
+    padding-right: 5px;
 }

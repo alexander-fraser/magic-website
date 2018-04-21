@@ -48,7 +48,7 @@
 <body>
 
     <!-- Top navbar. It sticks to the top of the page and collapses for mobile browsers. -->
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom site-header sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom site-header sticky-top shadow">
         <!-- Logo. It is also a link to the top of the page. -->
         <a class="navbar-brand" href="#">
             <i class="fas fa-magic"></i>
@@ -93,6 +93,7 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </nav>
 
@@ -101,20 +102,21 @@
     <!-- The "main" element is optional. It just provides structure to the html. -->
     <main role="main">
 
-        <!-- The jumbotron at the top of the page. -->
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h4 class="jumbotron-heading">Magical entertainment for your next event</h1>
-                    <p>
-                        <a href="#href-contact" class="btn btn-light">Contact Now</a>
-                    </p>
+        <!-- The welcome image at the top of the page. -->
+        <div class="shadow container-title">
+            <img class="img-fluid img-title" src="ARM-Wedding-Grand.png"> 
+            <div class="container text-block text-center">
+                <h4 class="jumbotron-heading">Magical Entertainment for Your Next Event</h4>
+                <p>
+                    <a href="#href-contact" class="btn btn-light">Contact Now</a>
+                </p>
             </div>
-        </section>
+        </div>
 
 
 
         <!-- About section. -->
-        <div class="section bg-blue">
+        <div class="section bg-blue shadow">
             <div class="container">
                 <h1 class="text-center">
                     <span id="href-about"></span>Meet the Magician</h1>
@@ -137,7 +139,7 @@
                             any event unique and memorable for all.</p>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <img class="img-fluid border-white" alt="Meet the Magician" src="https://static.wixstatic.com/media/c255f8_d22019127794499b8732df9093d9cf07~mv2_d_4000_2670_s_4_2.jpg/v1/crop/x_96,y_277,w_2487,h_2393/fill/w_618,h_491,al_c,q_80,usm_0.66_1.00_0.01/c255f8_d22019127794499b8732df9093d9cf07~mv2_d_4000_2670_s_4_2.webp">
+                        <img class="img-fluid shadow p-2 bg-white rounded" alt="Meet the Magician" src="ARM-Wedding-Close.png">
                     </div>
                 </div>
             </div>
@@ -201,7 +203,7 @@
 
 
         <!-- Carousel of testimonials. -->
-        <div class="section bg-blue">
+        <div class="section bg-blue shadow">
             <div class="container">
                 <h1 class="text-center">
                     <span id="href-testimonials"></span>Testimonals</h1>
@@ -300,18 +302,20 @@
                     <span id="href-instagram"></span>Instagram Feed
                 </a>
             </h1>
-            <p class="text-center">Follow aaronroeckmagic on Instagram</p>
+            <p class="text-center">
+                <a target="_blank" class="instagram-header" href="http://www.instagram.com/aaronroeckmagic">Follow AaronRoeckMagic on Instagram</a>
+            </p>
 
             <div class="album">
                 <div class="container">
                     
                     <!-- The first 9 Instagram pages are shown.  -->
                     <div class="row">
-                        <% for (var i = 0; i < Math.min(9, instagramFeed.length); i++) { %>
+                        <% for (var i = 0; i < Math.min(12, instagramFeed.length); i++) { %>
                             <div class="col-md-4 col-sm-6 col-6">
                                 <div class="card mb-4 box-shadow">
                                     <a target="_blank" href="http://www.instagram.com/p/<%= instagramFeed[i].shortCode %>">
-                                        <img class="card-img-top" src="<%= instagramFeed[i].imageURL %>" alt="Instagram image">
+                                        <img class="card-img-top shadow rounded" src="<%= instagramFeed[i].imageURL %>" alt="Instagram image">
                                     </a>
                                 </div>
                             </div>
@@ -319,13 +323,13 @@
                     </div>
 
                     <!-- The remaining Instagram pages start collapsed and are shown by clicking a button. -->
-                    <% if (instagramFeed.length > 9) { %>
+                    <% if (instagramFeed.length > 12) { %>
                         <div class="row collapse" id="instagramMore">
-                            <% for (var i = 9; i < instagramFeed.length; i++) { %>
+                            <% for (var i = 12; i < instagramFeed.length; i++) { %>
                                 <div class="col-md-4 col-sm-6 col-6">
                                     <div class="card mb-4 box-shadow">
                                         <a target="_blank" href="http://www.instagram.com/p/<%= instagramFeed[i].shortCode %>">
-                                            <img class="card-img-top" src="<%= instagramFeed[i].imageURL %>" alt="Instagram image">
+                                            <img class="card-img-top shadow rounded" src="<%= instagramFeed[i].imageURL %>" alt="Instagram image">
                                         </a>
                                     </div>
                                 </div>
@@ -333,7 +337,7 @@
                         </div>
                     <% } %>
 
-                    <button class="btn btn-primary btn-block" id="instagramMoreBtn" type="button" data-toggle="collapse" data-target="#instagramMore" aria-expanded="false" aria-controls="instagramMore">Show More</button>
+                    <button class="btn btn-primary btn-block shadow" id="instagramMoreBtn" type="button" data-toggle="collapse" data-target="#instagramMore" aria-expanded="false" aria-controls="instagramMore">Show More</button>
                     
                 </div>
             </div>
@@ -343,7 +347,7 @@
 
 
         <!-- Contact form. -->
-        <div class="section bg-blue">
+        <div class="section bg-blue shadow">
             <div class="container">
                 <h1 class="text-center">
                     <span id="href-contact"></span>Contact</h1>
@@ -351,13 +355,12 @@
                     <br>Tel: 519-998-7346</p>
 
                 <div class="row">
-                    <div style="margin: 25px auto;">
 
                         <!-- These attributes specify how the information is sent to the server. -->
                         <form action="/" method="POST">
 
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <input class="form-control" type="text" name="name" placeholder="Name">
                                     </div>
@@ -369,7 +372,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <textarea class="form-control" type="text" name="message" placeholder="Message" rows="5"></textarea>
                                     </div>
@@ -377,11 +380,11 @@
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-lg btn-dark btn-default btn-block">Send</button>
+                                <button class="btn btn-lg btn-dark btn-default btn-block shadow">Send</button>
                             </div>
 
                         </form>
-                    </div>
+                
                 </div>
             </div>
         </div>
@@ -396,12 +399,12 @@
     <footer class="text-muted">
         <div class="container text-center">
             <p>
-                <a href="#">Back to top</a>
+                <a class="btn btn-primary" href="#">Back to Top</a>
             </p>
             <p>Photography by
                 <a target="_blank" href="http://www.rachelkeyesphotography.com">Rachel Keyes Photography</a>.</p>
             <p>&copy; 2018 Aaron Roeck Magic. All rights reserved.</p>
-            <p>
+            <p id="footer-links">
                 <a target="_blank" href="http://www.facebook.com/aaronroeckmagic">
                     <i class="fab fa-facebook"></i>
                 </a>
