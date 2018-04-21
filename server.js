@@ -5,6 +5,9 @@ var express = require("express"),
     app = express(),
     request = require("request")
 
+// Set the port for the server to listen on.
+const PORT = process.env.PORT || 5000
+
 // Set the directories that will be used. "views" holds webpage templates and "public" holds images, styles, and client-side scripts.
 app.use(express.static(__dirname + '/views'));
 app.use(express.static(__dirname + '/public'));
@@ -16,18 +19,15 @@ var instagramFeed = [];
 
 // The root route. This specifies what happens when the webpage is visited.
 app.get("/", function (req, res) {
-    res.sendFile("index.html");
-});
-
-app.get("/ejs", function (req, res) {
     res.render("index.ejs", { instagramFeed: instagramFeed });
 });
 
 
 
 // Starts the server to start listening at the port specified.
-app.listen(3000, function () {
+app.listen(PORT, function () {
     console.log("The Aaron Roeck Magic server has started!");
+    console.log("The server is listening on " + PORT);
 });
 
 
