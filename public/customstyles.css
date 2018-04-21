@@ -1,0 +1,129 @@
+.container {
+    max-width: 960px;
+}
+
+
+
+/* Styling the navbar. */
+.navbar-custom {
+    background-color: rgba(0, 0, 0, .85);
+}
+
+
+
+/* Getting the in-page links to reflect the navbar's size. */
+h1 {
+    position: relative;
+}
+h1 span {
+    position: absolute;
+    top: -70px;
+}
+
+
+
+/* Styling the jumbotron. */
+.jumbotron {
+    background: url(https://scontent.fybz1-1.fna.fbcdn.net/v/t31.0-8/16804339_1386616048026477_1170167787183639374_o.jpg?_nc_cat=0&oh=f96302496c76ceda71e5481cadb2b1f4&oe=5B6C13C8);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 150px 50px 10px 50px;
+}
+.jumbotron-heading {
+    color: white;
+    background-color: rgba(0,0,0,.4);
+}
+
+
+
+/* Styling the spacing and backgrounds in the body. */
+img.border-white {
+    border: 10px solid white;
+}
+div.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.bg-blue {
+    /* background-color: #e0245e; */
+    /* background-color: #1fb650; */
+    background-color: #1da1f2;
+    color: white;
+}
+
+
+
+/* Styling the carousel. */
+.carousel-item {
+    min-height: 300px;          /* Avoids the page resizing when the screen is wide enough for content. */
+    padding-top: 20px;
+}
+
+/* Allows the carousel window to automatically resize to fit the caption. */
+.carousel-caption {
+    /* color: black;           */
+    position: relative;
+    left: 0%;
+    right: 0%;
+    padding: 40px;
+}
+
+/* Pushes the carousel next/previous icons to the edge of the screen (don't overlap text). */
+.carousel-control-prev {
+    width: 5%;    
+}
+.carousel-control-next {
+    width: 5%;    
+}
+
+/* Changes the colours of the carousel icons. */
+/* .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#333333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#333333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-indicators li {
+    background-color: #777777;
+}
+.carousel-indicators .active {
+    background-color: #333333;
+} */
+
+
+
+/* Styling the Instagram feed. */
+a.instagram-header {
+    color: #212529;
+}
+img.padded {
+    padding: 5px;
+}
+button {
+    margin: 0 auto 20px auto;
+}
+
+
+
+/* Styling the footer. */
+footer {
+    padding: 20px;
+    background-color: #323232;
+}
+footer p {
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/* Other styling. */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

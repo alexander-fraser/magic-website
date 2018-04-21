@@ -1,0 +1,21 @@
+{
+  "name": "magic-webiste",
+  "version": "1.0.0",
+  "description": "Aaron Roeck Magic's dynamic website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexander-fraser/magic-website.git"
+  },
+  "author": "Alexander Fraser",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}
