@@ -48,14 +48,14 @@
 <body>
 
     <!-- Top navbar. It sticks to the top of the page and collapses for mobile browsers. -->
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom site-header sticky-top shadow">
+    <nav class="navbar navbar-expand-sm navbar-dark custom-navbar site-header sticky-top shadow">
         <!-- Logo. It is also a link to the top of the page. -->
         <a class="navbar-brand" href="#">
             <i class="fas fa-magic"></i>
         </a>
 
         <!-- Button that appears when the navbar is collapsed. It toggles a list of the items in the navbar. -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button class="navbar-toggler" id="nav-collapse-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -103,10 +103,10 @@
     <main role="main">
 
         <!-- The welcome image at the top of the page. -->
-        <div class="shadow container-title">
-            <img class="img-fluid img-title" src="ARM-Wedding-Grand.png"> 
-            <div class="container text-block text-center">
-                <h4 class="jumbotron-heading">Magical Entertainment for Your Next Event</h4>
+        <div class="shadow custom-welcome">
+            <img class="img-fluid custom-welcome-image" src="ARM-Wedding-Grand.jpeg"> 
+            <div class="container text-center custom-welcome-block">
+                <h4><span class="custom-welcome-heading">Magical Entertainment for Your Next Event</span></h4>
                 <p>
                     <a href="#href-contact" class="btn btn-light">Contact Now</a>
                 </p>
@@ -116,7 +116,7 @@
 
 
         <!-- About section. -->
-        <div class="section bg-blue shadow">
+        <div class="shadow custom-section custom-bg-blue">
             <div class="container">
                 <h1 class="text-center">
                     <span id="href-about"></span>Meet the Magician</h1>
@@ -138,8 +138,8 @@
                             <br>Allow Aaron to join you at your next event and see for yourself how magic has the ability to make
                             any event unique and memorable for all.</p>
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                        <img class="img-fluid shadow p-2 bg-white rounded" alt="Meet the Magician" src="ARM-Wedding-Close.png">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img class="img-fluid shadow p-2 bg-white rounded" alt="Meet the Magician" src="ARM-Wedding-Close.jpeg">
                     </div>
                 </div>
             </div>
@@ -147,63 +147,59 @@
 
 
         <!-- Services section. -->
-        <div class="section container">
-            <h1 class="text-center">
-                <span id="href-services"></span>Services</h1>
+        <div class="custom-section">
+            <div class="container">
+                <h1 class="text-center">
+                    <span id="href-services"></span>Services</h1>
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-md-6 col-sm-12">
-                    <h4 class="text-center">Stage Magic Show</h2>
-                        <p>This 20-60 minute comedy and magic show is excellent for after dinner entertainment where everyone
-                            is seated and facing the stage. Full of audience participation, this high energy performance
-                            is suitable for all ages. From living rooms to theatres to banquet halls, make your next event
-                            memorable and exciting with this unique Stage Magic Show!</p>
+                    <div class="col-md-6 col-sm-12">
+                        <h4 class="text-center">Stage Magic Show</h2>
+                            <p>This 20-60 minute comedy and magic show is excellent for after dinner entertainment where everyone
+                                is seated and facing the stage. Full of audience participation, this high energy performance
+                                is suitable for all ages. From living rooms to theatres to banquet halls, make your next event
+                                memorable and exciting with this unique Stage Magic Show!</p>
 
-                        <h4 class="text-center">Walk Around Magic</h2>
-                            <p>Get up close and personal with walk around and close up magic. Excellent for those times where
-                                guests are mingling and enjoying drinks or appetizers. Whether audiences are seated or standing
-                                this style of strolling magic works great for creating a fun atmosphere and giving everyone
-                                something exciting to talk about. Walk Around Magic is also very effective at cocktail parties
-                                or for filling in a lull at some events such as wedding receptions, fundraisers or corporate
-                                dinners.</p>
+                            <h4 class="text-center">Walk Around Magic</h2>
+                                <p>Get up close and personal with walk around and close up magic. Excellent for those times where
+                                    guests are mingling and enjoying drinks or appetizers. Whether audiences are seated or standing
+                                    this style of strolling magic works great for creating a fun atmosphere and giving everyone
+                                    something exciting to talk about. Walk Around Magic is also very effective at cocktail parties
+                                    or for filling in a lull at some events such as wedding receptions, fundraisers or corporate
+                                    dinners.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <h4>Aaron's magic is fully tailorable and great for almost any event such as:</h4>
+                        <ul>
+                            <li>Wedding Receptions</li>
+                            <li>Corporate Events</li>
+                            <li>Holiday Parties</li>
+                            <li>Bar & Bat Mitzvahs</li>
+                            <li>Youth Retreats & Church Functions</li>
+                            <li>Fundraisers</li>
+                            <li>School Events</li>
+                            <li>Celebratory Milestones</li>
+                            <li>Private Functions</li>
+                            <li>Restaurant Entertainment</li>
+                            <li>And much more!</li>
+                        </ul>
+                    </div>
+
                 </div>
 
-                <div class="col-md-6 col-sm-12">
-                    <h4>Aaron's magic is fully tailorable and great for almost any event such as:</h4>
-                    <ul>
-                        <li>Wedding Receptions</li>
-                        <li>Corporate Events</li>
-                        <li>Holiday Parties</li>
-                        <li>Bar & Bat Mitzvahs</li>
-                        <li>Youth Retreats & Church Functions</li>
-                        <li>Fundraisers</li>
-                        <li>School Events</li>
-                        <li>Celebratory Milestones</li>
-                        <li>Private Functions</li>
-                        <li>Restaurant Entertainment</li>
-                        <li>And much more!</li>
-                    </ul>
+                <div class="text-center">
+                    <h4>Make your event unforgettable!</h4>
+                    <p>Contact now to customize magic for your event</p>
                 </div>
 
             </div>
-
-            <div class="text-center">
-                <h4>Make your event unforgettable!</h4>
-                <p>Contact now to customize magic for your event</p>
-<!--                 <p>
-                    <a href="#href-contact" class="btn btn-primary">Contact now to customize magic for your event</a>
-                </p> -->
-            </div>
-<!--             <div>
-                <img class="img-fluid" alt="Services" src="https://static.wixstatic.com/media/c255f8_a289441fd9694905b6eb382de9840ac6~mv2_d_4000_2670_s_4_2.jpg/v1/fill/w_681,h_455,al_c,q_80,usm_0.66_1.00_0.01/c255f8_a289441fd9694905b6eb382de9840ac6~mv2_d_4000_2670_s_4_2.webp">
-            </div> -->
         </div>
 
 
-
         <!-- Carousel of testimonials. -->
-        <div class="section bg-blue shadow">
+        <div class="shadow custom-section custom-bg-blue">
             <div class="container">
                 <h1 class="text-center">
                     <span id="href-testimonials"></span>Testimonals</h1>
@@ -295,37 +291,24 @@
 
 
         <!-- Instagram feed. The server program pulls the list of ARM Instagram pages and passes them to the JS below. -->
-        <div class="section container">
-            <h1 class="text-center">
-                <a target="_blank"  class="instagram-header" href="http://www.instagram.com/aaronroeckmagic">
-                    <i class="fab fa-instagram"></i>
-                    <span id="href-instagram"></span>Instagram Feed
-                </a>
-            </h1>
-            <p class="text-center">
-                <a target="_blank" class="instagram-header" href="http://www.instagram.com/aaronroeckmagic">Follow AaronRoeckMagic on Instagram</a>
-            </p>
+        <div class="custom-section">
+            <div class="container">
+                <h1 class="text-center">
+                    <a target="_blank"  class="custom-instagram-header" href="http://www.instagram.com/aaronroeckmagic">
+                        <i class="fab fa-instagram"></i>
+                        <span id="href-instagram"></span>Instagram Feed
+                    </a>
+                </h1>
+                <p class="text-center">
+                    <a target="_blank" class="custom-instagram-header" href="http://www.instagram.com/aaronroeckmagic">Follow AaronRoeckMagic on Instagram</a>
+                </p>
 
-            <div class="album">
-                <div class="container">
-                    
-                    <!-- The first 9 Instagram pages are shown.  -->
-                    <div class="row">
-                        <% for (var i = 0; i < Math.min(12, instagramFeed.length); i++) { %>
-                            <div class="col-md-4 col-sm-6 col-6">
-                                <div class="card mb-4 box-shadow">
-                                    <a target="_blank" href="http://www.instagram.com/p/<%= instagramFeed[i].shortCode %>">
-                                        <img class="card-img-top shadow rounded" src="<%= instagramFeed[i].imageURL %>" alt="Instagram image">
-                                    </a>
-                                </div>
-                            </div>
-                        <% } %>
-                    </div>
-
-                    <!-- The remaining Instagram pages start collapsed and are shown by clicking a button. -->
-                    <% if (instagramFeed.length > 12) { %>
-                        <div class="row collapse" id="instagramMore">
-                            <% for (var i = 12; i < instagramFeed.length; i++) { %>
+                <div class="album">
+                    <div class="container">
+                        
+                        <!-- The first 9 Instagram pages are shown.  -->
+                        <div class="row">
+                            <% for (var i = 0; i < Math.min(12, instagramFeed.length); i++) { %>
                                 <div class="col-md-4 col-sm-6 col-6">
                                     <div class="card mb-4 box-shadow">
                                         <a target="_blank" href="http://www.instagram.com/p/<%= instagramFeed[i].shortCode %>">
@@ -335,19 +318,34 @@
                                 </div>
                             <% } %>
                         </div>
-                    <% } %>
 
-                    <button class="btn btn-primary btn-block shadow" id="instagramMoreBtn" type="button" data-toggle="collapse" data-target="#instagramMore" aria-expanded="false" aria-controls="instagramMore">Show More</button>
-                    
+                        <!-- The remaining Instagram pages start collapsed and are shown by clicking a button. -->
+                        <% if (instagramFeed.length > 12) { %>
+                            <div class="row collapse" id="instagram-collapse">
+                                <% for (var i = 12; i < instagramFeed.length; i++) { %>
+                                    <div class="col-md-4 col-sm-6 col-6">
+                                        <div class="card mb-4 box-shadow">
+                                            <a target="_blank" href="http://www.instagram.com/p/<%= instagramFeed[i].shortCode %>">
+                                                <img class="card-img-top shadow rounded" src="<%= instagramFeed[i].imageURL %>" alt="Instagram image">
+                                            </a>
+                                        </div>
+                                    </div>
+                                <% } %>
+                            </div>
+                        <% } %>
+
+                        <button class="btn btn-primary btn-block shadow" id="instagram-show-btn" type="button" data-toggle="collapse" data-target="#instagram-collapse" aria-expanded="false" aria-controls="instagram-collapse">Show More</button>
+                        
+                    </div>
                 </div>
+            
             </div>
-        
         </div>
 
 
 
         <!-- Contact form. -->
-        <div class="section bg-blue shadow">
+        <div class="custom-section custom-bg-blue">
             <div class="container">
                 <h1 class="text-center">
                     <span id="href-contact"></span>Contact</h1>

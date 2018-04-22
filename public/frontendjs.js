@@ -1,14 +1,20 @@
 $(document).ready(function() {
 
-    // Instagram "Show More/Less" button logic.
-    $("#instagramMoreBtn").on("click", function() {
 
-        if ($("#instagramMore").hasClass("show")) {
+    // Navbar's logic to collapse mobile menu once clicked.
+    $('.nav-link').on('click', function () {
+        $('#nav-collapse-btn').click();
+    });
+
+
+    // Instagram Feed's "Show More/Less" button logic.
+    $("#instagram-show-btn").on("click", function() {
+        if ($("#instagram-collapse").hasClass("show")) {
             $(this).text("Show More");
         } else {
             $(this).text("Show Less");
         }
-        
     });
+
 
 });    

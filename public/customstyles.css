@@ -1,3 +1,14 @@
+/* General properties that apply to the entire page. */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+    position: relative;
+    font-weight: bold;
+}
+h4 {
+    font-weight: bold;
+}
 .container {
     max-width: 960px;
 }
@@ -5,50 +16,43 @@
 
 
 /* Styling the navbar. */
-.navbar-custom {
+.custom-navbar {
     background-color: rgba(0, 0, 0, .85);
 }
-
-
-
-/* Getting the in-page links to reflect the navbar's size. */
-h1 {
-    position: relative;
-}
 h1 span {
-    position: absolute;
+    position: absolute;                  /* Getting the in-page links to reflect the navbar's size. */
     top: -70px;
 }
 
 
 
 /* Styling the welcome image. */
-.container-title {
+.custom-welcome {
     position: relative;
+}
+.custom-welcome-image {
     min-height: 200px;
 }
-.img-title {
-    min-height: 200px;
-}
-.text-block {
+.custom-welcome-block {
     position: absolute;
     bottom: 10%;
     left: 0%;
     right: 0%;
 }
-.jumbotron-heading {
+.custom-welcome-heading {
     color: white;
-    background-color: rgba(0,0,0,.60);
+    background-color: rgba(0,0,0,.80);
+    padding: 0px 10px;
 }
 
 
 
 /* Styling the spacing and backgrounds in the body. */
-div.section {
+div.custom-section {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-div.bg-blue {
+div.custom-bg-blue {
     /* background-color: #e0245e; */
     /* background-color: #1fb650; */
     background-color: #1da1f2;
@@ -60,19 +64,17 @@ div.bg-blue {
 /* Styling the carousel. */
 .carousel-item {
     min-height: 300px;          /* Avoids the page resizing when the screen is wide enough for the content. */
-    padding-top: 20px;
 }
 
 /* Allows the carousel window to automatically resize to fit the caption. */
 .carousel-caption {
-    /* color: black;           */
     position: relative;
     left: 0%;
     right: 0%;
     padding: 40px;
 }
 
-/* Pushes the carousel next/previous icons to the edge of the screen (don't overlap text). */
+/* Pushes the carousel next/previous icons to the edge of the screen (so that they don't overlap the text). */
 .carousel-control-prev {
     width: 5%;    
 }
@@ -80,7 +82,7 @@ div.bg-blue {
     width: 5%;    
 }
 
-/* Changes the colours of the carousel icons. */
+/* Changes the colours of the carousel icons, if you need a color other than white. */
 /* .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#333333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -97,13 +99,10 @@ div.bg-blue {
 
 
 /* Styling the Instagram feed. */
-a.instagram-header {
+a.custom-instagram-header {
     color: #212529;
 }
-img.padded {
-    padding: 5px;
-}
-#instagramMoreBtn {
+#instagram-show-btn {
     margin: 0 auto 20px auto;
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "magic-webiste",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aaron Roeck Magic's dynamic website.",
   "main": "server.js",
   "scripts": {
